@@ -43,12 +43,7 @@ class Calendario:
                         semanas_anteriores.append(i)
             self.mes_anterior[0].extend(semanas_anteriores)
            
-                
-                
-        
-                
-            
-                
+                    
         print(f'O mês anterior é: {calendar.month_name[self.mes-1]}\n') 
         
 
@@ -112,7 +107,7 @@ class Calendario:
 
 
         print(f'Os próximo dias de folga do funcionário serão:')
-        print(self.dias_folga[6::6])
+        print(self.dias_folga[7::7])
                
                             
 
