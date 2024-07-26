@@ -22,15 +22,30 @@ class Calendario:
         self.mescla_lista()
         self.verifica_dia_mes_anterior()
         self.gera_folga()
+        
       
     
     def busca_mes_anterior(self):
 
+        semanas_anteriores = []
+
         anterior = calendar.monthcalendar(self.ano, self.mes-1)
 
-        for i in anterior[3:4]:
-            if i != 0:
-                self.mes_anterior[0].append(i)
+        contador = 0
+
+        while contador <= 5:
+            for n in range(3, 5):        
+
+                for i in anterior[n]:
+                    if i != 0:
+                        print(i)
+                        contador += 1
+                        semanas_anteriores.append(i)
+            self.mes_anterior[0].extend(semanas_anteriores)
+           
+                
+                
+        
                 
             
                 
@@ -103,10 +118,10 @@ class Calendario:
 
             
 
-a = Calendario(2024, 8, 24)
+a = Calendario(2024, 7, 24)
 
-print(a.dias_folga)
-        
+
+
 
 
 

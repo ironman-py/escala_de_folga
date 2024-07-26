@@ -11,5 +11,3 @@ ultimo_dia_folga = int(input('Digite o último dia de folga do funcionário: '))
 
 funcionario = Funcionario(nome, ultimo_dia_folga)
 gerador = Calendario(ano, mes_folga, funcionario.ultima_folga)
-
-
