@@ -113,7 +113,7 @@ class Calendario:
 
             
 
-a = Calendario(2024, 7, 24)
+
 
 
 
